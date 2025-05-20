@@ -1,0 +1,12 @@
+@import "../style/vars.scss";
+
+.wrapper {
+  .container {
+    padding-top: 100px;
+    width: 80%;
+    margin: 0 auto;
+    min-height: calc(100vh - 200px);
+    @include flex(flex, column, center, center);
+    gap: 30px;
+  }
+}

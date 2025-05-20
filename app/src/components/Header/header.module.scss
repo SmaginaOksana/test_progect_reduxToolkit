@@ -1,0 +1,31 @@
+@import "../../style/vars.scss";
+
+header {
+  border-bottom: 3px rgba(191, 191, 191, 0.3) solid;
+  height: 100px;
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    h1 {
+      @include font(30, 500);
+    }
+    a {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      width: 200px;
+      border: none;
+      background-color: rgba(191, 191, 191);
+      border-radius: 15px;
+      @include font(30px, 500);
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+        background-color: rgba(133, 133, 133, 0.321);
+      }
+    }
+  }
+}
